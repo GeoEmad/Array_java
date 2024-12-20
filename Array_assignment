@@ -1,0 +1,91 @@
+package Java;
+public class Array {
+
+    public static void main(String[] args) {
+        // -------------- Easy Questions (10 Questions) --------------
+        
+        // Question 1: Declare and initialize a single-dimensional array with five integers.
+        int[] arr1 = {10, 20, 30, 40, 50};
+        System.out.println("Question 1: " + java.util.Arrays.toString(arr1));
+
+        // -------------- 
+        System.out.println("---------------------------- ");
+        
+        // Question 2: How do you find the length of an array in Java? Demonstrate with an example.
+        System.out.println("Question 2: Length of arr1 = " + arr1.length);
+
+        // --------------
+        System.out.println("---------------------------- ");
+        
+        // Question 3: Write a program to traverse a single-dimensional array using a for loop and print its elements.
+        System.out.print("Question 3: ");
+        for (int i = 0; i < arr1.length; i++) {
+            System.out.print(arr1[i] + " ");
+        }
+        System.out.println();
+
+        // --------------
+        System.out.println("---------------------------- ");
+        
+        // Question 4: How do you assign values to an array using an initializer list? Provide an example.
+        int[] arr2 = {5, 10, 15, 20, 25};
+        System.out.println("Question 4: " + java.util.Arrays.toString(arr2));
+
+        // --------------
+        System.out.println("---------------------------- ");
+        
+        // Question 5: Write a program to print the first and last elements of an array.
+        System.out.println("Question 5: First Element = " + arr1[0] + ", Last Element = " + arr1[arr1.length - 1]);
+
+        // --------------
+        System.out.println("---------------------------- ");
+        
+        // Question 6: What is the default value of elements in an uninitialized int array? Write code to verify.
+
+        // --------------
+        System.out.println("---------------------------- ");
+        
+        // Question 7: Write a program to calculate the sum of all elements in an integer array.
+        int sum = 0;
+        for (int i = 0; i < arr1.length; i++) {
+            sum += arr1[i];
+        }
+        System.out.println("Question 7: Sum of elements in arr1 = " + sum);
+
+        // --------------
+        System.out.println("---------------------------- ");
+        
+        // Question 8: Declare a 2D array and initialize it with a 3x3 matrix. Print all its elements.
+        int[][] arr4 = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+        System.out.println("Question 8: 2D Array (3x3 Matrix):");
+        for (int i = 0; i < arr4.length; i++) {
+            for (int j = 0; j < arr4[i].length; j++) {
+                System.out.print(arr4[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        // --------------
+        System.out.println("---------------------------- ");
+        
+        // Question 9: Write a program to find the maximum element in a single-dimensional array.
+        int max = arr1[0];
+        for (int i = 1; i < arr1.length; i++) {
+            if (arr1[i] > max) {
+                max = arr1[i];
+            }
+        }
+        System.out.println("Question 9: Maximum element in arr1 = " + max);
+
+        // --------------
+        System.out.println("---------------------------- ");
+        
+        // Question 10: How do you reverse the elements of an array? Write a simple program.
+        int[] arr5 = {1, 2, 3, 4, 5};
+        System.out.print("Question 10: Reversed arr5 = ");
+        for (int i = arr5.length - 1; i >= 0; i--) {
+            System.out.print(arr5[i] + " ");
+        }
+        System.out.println();
+    }
+}
